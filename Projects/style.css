@@ -19,6 +19,7 @@ span{
 }
 .head{
     display: flex;
+    justify-content: center;
 }
 .main{
 
@@ -34,7 +35,7 @@ span{
     width: 40px;
     height: 40px;
     margin-top: 10px;
-    margin-left: 370px;
+/*     margin-left: 370px; */
      /* margin-bottom: -50px; */
 }
 .h2{
