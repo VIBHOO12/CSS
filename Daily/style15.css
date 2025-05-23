@@ -1,0 +1,22 @@
+.h1{
+   text-align: center;
+   font-size:15px;
+}
+.main{
+    text-align: center;
+    background-color: aqua;
+    margin-top: 50px;
+}
+.h2{
+    color: blue;
+    font-weight:bold;
+}
+
+.h3{
+    color: salmon;
+    font-style: italic;
+}
+.h4{
+    color: salmon;
+    font-size:large;
+}
