@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Alignment</title>
+    <style>
+        /* Flexbox Self Alignment */
+        .container {
+            display: flex;
+            height: 200px;
+            border: 1px solid #ccc;
+        }
+
+        .item {
+            width: 50px;
+            height: 50px;
+            background-color: #f0f0f0;
+            border: 1px solid #666;
+        }
+
+        .item1 {
+            align-self: flex-start;
+        }
+
+        .item2 {
+            align-self: center;
+        }
+
+        .item3 {
+            align-self: flex-end;
+        }
+
+        /* Grid Self Alignment */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 100px);
+            gap: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .grid-item {
+            background-color: #f0f0f0;
+            border: 1px solid #666;
+        }
+
+        .grid-item1 {
+            align-self: start;
+        }
+
+        .grid-item2 {
+            align-self: center;
+        }
+
+        .grid-item3 {
+            align-self: end;
+        }
+
+        .grid-item4 {
+            justify-self: start;
+        }
+
+        .grid-item5 {
+            justify-self: center;
+        }
+
+        .grid-item6 {
+            justify-self: end;
+        }
+    </style>
+</head>
+<body>
+    <!-- Flexbox -->
+    <div class="container">
+        <div class="item item1">Flex Start</div>
+        <div class="item item2">Flex Center</div>
+        <div class="item item3">Flex End</div>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid-container">
+        <div class="grid-item grid-item1">Grid Start</div>
+        <div class="grid-item grid-item2">Grid Center</div>
+        <div class="grid-item grid-item3">Grid End</div>
+        <div class="grid-item grid-item4">Justify Start</div>
+        <div class="grid-item grid-item5">Justify Center</div>
+        <div class="grid-item grid-item6">Justify End</div>
+    </div>
+</body>
+</html>
