@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Internal CSS Animation</title>
+  <style>
+    /* Keyframes for animation */
+    @keyframes slideAndColor {
+      0% {
+        transform: translateX(0);
+        background-color: tomato;
+      }
+      50% {
+        transform: translateX(100px);
+        background-color: gold;
+      }
+      100% {
+        transform: translateX(200px);
+        background-color: limegreen;
+      }
+    }
+
+    /* Styling and animation */
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: tomato;
+      position: relative;
+      animation: slideAndColor 3s infinite alternate;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Box to animate -->
+  <div class="animated-box"></div>
+
+</body>
+</html>
